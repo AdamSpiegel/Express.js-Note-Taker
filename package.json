@@ -1,0 +1,23 @@
+{
+  "name": "Express.js-Note-Taker",
+  "version": "1.0.0",
+  "description": "Utilizing Express.js on the backend, this application is designed to save and retrieve note data from a JSON file. A note taker application which allows a small business owner to submit, save and delete notes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamSpiegel/Express.js-Note-Taker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdamSpiegel/Express.js-Note-Taker/issues"
+  },
+  "homepage": "https://github.com/AdamSpiegel/Express.js-Note-Taker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
