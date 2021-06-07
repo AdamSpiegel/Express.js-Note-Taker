@@ -17,9 +17,18 @@
 
   ## Installation :hammer_and_wrench:	
   The following steps were completed in order to develop this application:
+  1) Git repository was created which included the gitignore file (for node_modules and .DS_Store especially) and MIT License.
+  2) Npm Init install was carried out to develop the package.json.  NPM packages installed & utilized for this project included the FS module, Express, and UUID.
+  3) The Express Server and Initial PORT were they built out, in addition to the middleware necessary for this project.
+  4) The Express Listener (located at the base of the server.js file) was there constructed (to actually begin the note taker server).
+  4) HTML Display Routes
+  5) API Routes 
+  6) API Post Route 
+  7) App.Delete Note functionality - still in progress
+  8) 
 
   ## Project Usage :pencil2:
-  A tool for any business owner or client whom wants to keep track of their notes on an ongoing basis, while having them saved with the option to delete.
+  This project's purpose was to create a tool for any business owner or client, whom wants to keep track of their notes on an ongoing basis, while having them saved with the option to have an ongoing delete functionality option as well.  The project was to be hosted through a app via Heroku, so it could be accessed anywhere, while utilizing backend programming technology.
 
   ## License Information :ticket:
   The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology in the late 1980s. As a permissive license, it puts only very limited restriction on reuse and has, therefore, high license compatibility.

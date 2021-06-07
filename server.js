@@ -32,30 +32,30 @@ app.post("/api/notes", (req, res) => {
         if (error) throw error
         let notes = data
         notes.push(newNote)
+        // Writing the data array to the db.json file
         fs.writeFile("db/db.json", data, (error) => {
             if (error)
-            console.log(err);
-            else{
+                console.log(err);
+            else {
                 console.log(fs.readFileSync("db.db/json", "utf8"));
             }
         })
-        // write the "let notes = data array to the db/json file. fs docs for syntax. 
-        res.send (res.json.newNote) 
+        res.send(res.json.newNote)
     });
 });
 
-// // Delete Notes functionality - Need to work out still - 6.5.21
+// // Delete Notes functionality - Need to FILTER through process to remove notes - 6.5.21
 // app.delete("/api/notes:id", (req, res) => {
 //     fs.readFile("db/db.json", "utf8", (error, data) => {
 //         if (error) throw error
-//         let notes = data
-//         notes.push(newNote)
+//         let notes = JSON.parse(data);
+//         notes.filter(newNote) (req.parm.id)
 //         fs.writeFile()
-//         // can filter through to remove notes
+//      
 //     }});
 
-    // In case API Route don't function place here
-    // app.get("*", (req, res) => res.sendFile(path.join(__dirname, "/public/index.html")));
+// In case API Route don't function place here
+// app.get("*", (req, res) => res.sendFile(path.join(__dirname, "/public/index.html")));
 
-    // Express "listener" to start the note taker server
-    app.listen(PORT, () => console.log(`App listening at http://localhost:${PORT}`));
+// Express "listener" to start the note taker server
+app.listen(PORT, () => console.log(`App listening at http://localhost:${PORT}`));
