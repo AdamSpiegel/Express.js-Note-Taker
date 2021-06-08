@@ -41,7 +41,7 @@ app.post("/api/notes", (req, res) => {
             newNote.id = uniqid();
             notes.push(newNote);
             fs.writeFile("db/db.json", JSON.stringify(notes), (err) =>
-                err ? console.error(err) : console.log('New Note Saved!'))
+                err ? console.error(err) : console.log('New Note Saved'))
             res.send(newNote);
         };
     })
@@ -58,7 +58,7 @@ app.delete("/api/notes/:id", (req, res) => {
             let notes = JSON.parse(data);
             notes = notes.filter(e => e.id != req.params.id)
             fs.writeFile("db/db.json", JSON.stringify(notes), (err) =>
-                err ? console.error(err) : console.log('Note Deleted!'))
+                err ? console.error(err) : console.log('Note Deleted'))
             res.send({});
         }
     })
